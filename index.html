@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <link rel="stylesheet" href="./src/styles/styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div>
+            <h1 class="header__title">Datos de Paises del mundo</h1>
+            <p class="header__information">Actualmente se tiene <span class="header__information--number" id="paises-length"></span> paises en esta data</p>
+            <p class="header__information--count"></p>
+        </div>
+    </header>
+    <main class="main">
+
+        <!-- input -->
+        <div class="input-group">
+            <p class="input__title">Ingresa el nombre del pais</p>
+            <input type="text" id="myInput" class="input-group__input">
+            <p class="input__message">Resultado de busqueda : <span id="resultado-busqueda">...</span></p>
+        </div>
+
+        
+        <div class="button-group">
+                <button id="btnName" class="btn">&#x21c5; Name</button>
+                <button id="btnCapital" class="btn">&#x21c5; Capital</button>
+                <button id="btnPopulation" class="btn">&#x21c5; Población</button>
+                <a href="#sectionStatistics" class="btn" style="color: white;"><i class="fa-sharp fa-solid fa-chart-simple"></i></a></button>
+        </div>
+
+        <div class="btn-volver">
+            <a  href="#header"><i class="fa-solid fa-arrow-up fa-xl"></i></a>
+        </div>
+
+        <section class="countries" id="sectionCountries">
+
+        </section>
+        <br>
+        <section class="section-statistics" id="sectionStatistics">
+            <div class="button-group">
+                <button id="btnPoblacion" class="btn"><i class="fa-solid fa-people-group"></i> Poblacion</button>
+                <button id="btnLenguages" class="btn"><i class="fa-solid fa-language"></i> Lenguajes</button>
+            </div>
+            <div class="section-statistics__grafico" id="Statistics">
+                <div class="container">
+                    <div class="containerBody">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+       
+
+
+        <!-- Falta Statistics -->
+       
+    </main>
+
+    <script src="https://kit.fontawesome.com/889cbcbdf4.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./src/index.js" type="module"></script>
+
+
+
+</body>
+</html>
